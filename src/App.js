@@ -2,10 +2,10 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./home/Home";
-import Linkedin from "./assets/icons/linkedin.png";
+
 import Youtube from "./assets/icons/youtube.png";
 import Mail from "./assets/icons/mail.png";
-import Facebook from "./assets/icons/facebook.png";
+
 
 import HowToHelp from "./how-to-help/how-to-help";
 import AboutUs from "./donate/about-us";
