@@ -12,6 +12,8 @@ import AboutUs from "./donate/about-us";
 import Contact from "./contact/contact";
 
 function App() {
+  let isHome = true; 
+
   return (
     <Router>
       <div className="App">
@@ -27,13 +29,25 @@ function App() {
             <div id="header-socialmedia">
               <img src={Mail} alt="Mail" id="header-mail" />
               <img src={Youtube} alt="Youtube" id="header-youtube" />
-              <img src={Facebook} alt="Facebook" id="header-facebook" />
-              <img src={Linkedin} alt="Linkedin" id="header-linkedin" />
+
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-plain.svg"
+                id="header-facebook" alt = "header-facebook"
+              />
+
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                id="header-linkedin" alt = "header-linkedin"
+              />
             </div>
-            
+
             <nav>
               <ul>
+                <li> 
+                  <Link to = "/">{isHome ? "Neverita": "Else"}</Link>
+                  </li>
                 <li>
+                
                   <Link to="/about-us">
                     {" "}
                     SOBRE <br />
@@ -47,12 +61,16 @@ function App() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" id = "header-contact"> CONTACTO </Link>
+                  <Link to="/contact" id="header-contact">
+                    {" "}
+                    CONTACTO{" "}
+                  </Link>
                 </li>
                 <li>
                   <Link to="/" id="header-donation">
                     {" "}
-                    DONAR{" "} 
+                    DONAR{" "}
+                    
                   </Link>
                 </li>
               </ul>
@@ -68,7 +86,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />}>
               {" "}
             </Route>
-            <Route path = "/contact" element = {<Contact />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
           </Routes>
         </body>
       </div>

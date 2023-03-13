@@ -45,7 +45,8 @@ a {
   font-family: 'Futura', 'Roboto', sans-serif;
   transition: 0.6s;
   font-size: 0.8em;
-
+  /* round */
+  border-radius: 0.5em;
 }
 
 a:hover {
@@ -67,7 +68,7 @@ a:hover {
 #header-donation {
   color: rgb(239, 187, 83);
   /* center vertically */
-
+  
 }
 
 
@@ -84,15 +85,15 @@ a:hover {
 }
 
 #header-mail {
-  height: 1em;
+  height: 0.7em;
 }
 
 #header-youtube {
-  height: 1em;
+  height: 0.71em;
 }
 
 #header-facebook {
-  height: 1em;
+  height: 0.7em;
 }
 
 #header-linkedin {

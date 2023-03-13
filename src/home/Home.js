@@ -12,7 +12,7 @@ export default function Home() {
       <source src={background} type="video/mp4" />
     </video>
     </div> 
-    <img src = {Logo} id = "video-logo"/> 
+    <img src = {Logo} id = "video-logo" alt = "video-logo"/> 
   </div>
     )
 };
