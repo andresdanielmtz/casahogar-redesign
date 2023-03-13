@@ -6,14 +6,11 @@ import Home from "./home/Home";
 import Youtube from "./assets/icons/youtube.png";
 import Mail from "./assets/icons/mail.png";
 
-
 import HowToHelp from "./how-to-help/how-to-help";
-import AboutUs from "./donate/about-us";
+import AboutUs from "./about-us/about-us";
 import Contact from "./contact/contact";
 
 function App() {
-  let isHome = true; 
-
   return (
     <Router>
       <div className="App">
@@ -32,22 +29,20 @@ function App() {
 
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-plain.svg"
-                id="header-facebook" alt = "header-facebook"
+                id="header-facebook"
+                alt="header-facebook"
               />
 
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-                id="header-linkedin" alt = "header-linkedin"
+                id="header-linkedin"
+                alt="header-linkedin"
               />
             </div>
 
             <nav>
               <ul>
-                <li> 
-                  <Link to = "/">{isHome ? "Placeholder": "Not Placeholder"}</Link>
-                  </li>
                 <li>
-                
                   <Link to="/about-us">
                     {" "}
                     SOBRE <br />
@@ -70,7 +65,6 @@ function App() {
                   <Link to="/" id="header-donation">
                     {" "}
                     DONAR{" "}
-                    
                   </Link>
                 </li>
               </ul>

@@ -1,0 +1,36 @@
+
+#aboutUsPage { 
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+
+}
+
+h3 { 
+    display: flex;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: sans-serif;
+}
+
+p { 
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    max-width: 90%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#aboutUs-text { 
+    margin-left: 2em;
+    flex: 1;
+}
+
+img { 
+    max-width: 100%;
+    width: 30%;
+
+}
