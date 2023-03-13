@@ -44,7 +44,7 @@ function App() {
             <nav>
               <ul>
                 <li> 
-                  <Link to = "/">{isHome ? "Neverita": "Else"}</Link>
+                  <Link to = "/">{isHome ? "Placeholder": "Not Placeholder"}</Link>
                   </li>
                 <li>
                 
