@@ -4,7 +4,7 @@ import ImageCollumbus from "../assets/img/Cullumbers.png"
 export default function aboutUs() {
   return (
     <div id="aboutUsPage">
-      <img src={ImageCollumbus} alt = "img" />
+      <img src={ImageCollumbus} alt = "img" id = "about-img"/>
       <div id="aboutUs-text">
         
         <h3> Sobre nosotros. </h3>
