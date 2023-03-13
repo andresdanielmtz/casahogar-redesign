@@ -30,6 +30,7 @@ function App() {
               <img src={Facebook} alt="Facebook" id="header-facebook" />
               <img src={Linkedin} alt="Linkedin" id="header-linkedin" />
             </div>
+            
             <nav>
               <ul>
                 <li>
