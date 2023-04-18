@@ -40,38 +40,46 @@ function App() {
               />
             </div>
 
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/about-us">
-                    {" "}
-                    SOBRE <br />
-                    NOSOTROS{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/how-to-help">
-                    {" "}
-                    COMO PUEDES <br /> AYUDAR{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" id="header-contact">
-                    {" "}
-                    CONTACTO{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" id="header-donation">
-                    {" "}
-                    DONAR{" "}
-                  </Link>
-                </li>
-              </ul>
-            </nav>
+            <div className="navigation-list">
+              <nav>
+                <ul>
+                  <li>
+                    <Link to = "/">
+                      {window.location.pathname === "/about-us" ? ":D": "D:"}
+                      {console.log(window.location.pathnames)}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/about-us">
+                      {" "}
+                      SOBRE <br />
+                      NOSOTROS{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/how-to-help">
+                      {" "}
+                      COMO PUEDES <br /> AYUDAR{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" id="header-contact">
+                      {" "}
+                      CONTACTO{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/" id="header-donation">
+                      {" "}
+                      DONAR{" "}
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
-        <body>
+        <div>
           <Routes>
             <Route path="/" element={<Home />}>
               {" "}
@@ -82,7 +90,7 @@ function App() {
             </Route>
             <Route path="/contact" element={<Contact />}></Route>
           </Routes>
-        </body>
+        </div>
       </div>
     </Router>
   );

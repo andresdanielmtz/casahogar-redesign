@@ -100,3 +100,8 @@ a:hover {
   height: 0.7em;
 }
 
+ul {
+  display:inline-block;
+  vertical-align: middle;
+}
+

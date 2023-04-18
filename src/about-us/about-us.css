@@ -1,21 +1,19 @@
-
-#aboutUsPage { 
+#aboutUsPage {
     display: flex;
     align-items: center;
     margin-top: 2em;
-
 }
 
-h3 { 
+#aboutUs-title {
     display: flex;
-    font-size: 1.8em;
+    font-size: 2.2em;
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 0.5em;
     font-family: sans-serif;
 }
 
-p { 
+#aboutUs-description {
     font-size: 1.4em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -24,12 +22,12 @@ p {
     text-justify: inter-word;
 }
 
-#aboutUs-text { 
+#aboutUs-text {
     margin-left: 2em;
     flex: 1;
 }
 
-#about-img { 
+#about-img {
     max-width: 100%;
     width: 30%;
 
