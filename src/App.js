@@ -45,8 +45,7 @@ function App() {
                 <ul>
                   <li>
                     <Link to = "/">
-                      {window.location.pathname === "/about-us" ? ":D": "D:"}
-                      {console.log(window.location.pathnames)}
+                      INICIO
                     </Link>
                   </li>
                   <li>
